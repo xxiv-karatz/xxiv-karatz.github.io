@@ -12,12 +12,12 @@ A modern, responsive portfolio website showcasing my work as a software engineer
 
 ## 🚀 Live Site
 
-Visit the live portfolio at: [https://khulekani-mtshali.github.io/](https://khulekani-mtshali.github.io/)
+Visit the live portfolio at: [https://xxiv-karatz.github.io/](https://xxiv-karatz.github.io/)
 
 ## 📁 Project Structure
 
 ```
-khulekani-mtshali.github.io/
+xxiv-karatz.github.io/
 ├── index.html          # Main portfolio page
 ├── styles.css          # Styling and responsive design
 ├── README.md           # This file
