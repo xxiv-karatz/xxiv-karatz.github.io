@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khulekani | Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <a href="#" class="brand">KHULEKANI</a>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <section class="hero-copy">
+            <p class="eyebrow">Software Engineer & Cybersecurity Enthusiast</p>
+            <h1>Khulekani Mtshali</h1>
+            <p class="hero-text">I build meaningful digital experiences and champion access to career guidance for South African youth.</p>
+            <div class="hero-actions">
+                <a href="#work" class="button primary">View featured work</a>
+                <a href="#contact" class="button secondary">Get in touch</a>
+                <a href="files/Khulekani_Mtshali_Resume.pdf" download class="button secondary">Download Resume</a>
+            </div>
+        </section>
+        <figure class="hero-image">
+            <img src="images/profile.jpeg" alt="A picture of Khulekani Mtshali">
+        </figure>
+    </header>
+
+    <main>
+        <section id="about" class="section about-section">
+            <header class="section-header">
+                <span>About</span>
+                <h2>Purpose-driven engineering with impact.</h2>
+            </header>
+            <p>I'm a software engineer focused on building useful systems while elevating young South African talent. My work merges practical engineering with inclusive mission-driven products that help learners and first-time applicants take their next step.</p>
+        </section>
+
+        <section id="work" class="section projects-section">
+            <header class="section-header">
+                <span>Featured Work</span>
+                <h2>Projects</h2>
+            </header>
+            <div class="project-container">
+                <button class="scroll-arrow left-arrow" aria-label="Scroll left">&larr;</button>
+                <section class="project-grid">
+                    <article class="project-card">
+                        <p class="project-label">JobGenie 🧞</p>
+                        <h3>AI-powered career assistant</h3>
+                        <p>Helps first-time job seekers write CVs, find learnerships, and prepare for interviews. Built with IBM prompt engineering principles.</p>
+                        <p class="project-links"><a href="https://jobgenieai.lovable.app" target="_blank" rel="noopener noreferrer">Live app</a> · <a href="https://github.com/5Bit-Technologies/JobGenieAI" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+                    </article>
+
+                    <article class="project-card">
+                        <p class="project-label">Innerk Hub</p>
+                        <h3>Research collaboration platform</h3>
+                        <p>Full-stack web app connecting researchers, supervisors, and admins. Features project management, real-time communication, and progress tracking.</p>
+                        <p>How to run: <code>npm install && npm start</code></p>
+                        <p class="project-links"><a href="https://github.com/iamprist/University-Research-Collaboration-Platform" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+                    </article>
+
+                    <article class="project-card">
+                        <p class="project-label">CareGuide 🩺</p>
+                        <h3>Healthcare chatbot</h3>
+                        <p>Conversational AI for symptom checking, mental health support, and finding nearby medical facilities. Supports all 11 South African languages.</p>
+                        <p class="project-links"><a href="https://creator.voiceflow.com/share/69eb12a06698cc0dab2d182e/development" target="_blank" rel="noopener noreferrer">Live chatbot</a> · <a href="https://github.com/5Bit-Technologies/CareGuide" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+                    </article>
+                </section>
+                <button class="scroll-arrow right-arrow" aria-label="Scroll right">&rarr;</button>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <header class="section-header">
+                <span>Contact</span>
+                <h2>Let's connect.</h2>
+            </header>
+            <p>If you want to collaborate, hire, or discuss how technology can support more young people, reach out.</p>
+            <p>Email: <a href="mailto:praymtshali@gmail.com">praymtshali@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/xxiv-karatz" target="_blank" rel="noopener noreferrer">github.com/xxiv-karatz</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/khulekani-mtshali" target="_blank" rel="noopener noreferrer">linkedin.com/in/khulekani-mtshali</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Khulekani Mtshali</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const projectGrid = document.querySelector('.project-grid');
+            const leftArrow = document.querySelector('.left-arrow');
+            const rightArrow = document.querySelector('.right-arrow');
+
+            function updateArrowVisibility() {
+                const scrollLeft = projectGrid.scrollLeft;
+                const scrollWidth = projectGrid.scrollWidth;
+                const clientWidth = projectGrid.clientWidth;
+
+                leftArrow.disabled = scrollLeft <= 0;
+                rightArrow.disabled = scrollLeft >= scrollWidth - clientWidth - 1;
+            }
+
+            leftArrow.addEventListener('click', function() {
+                projectGrid.scrollBy({
+                    left: -400,
+                    behavior: 'smooth'
+                });
+            });
+
+            rightArrow.addEventListener('click', function() {
+                projectGrid.scrollBy({
+                    left: 400,
+                    behavior: 'smooth'
+                });
+            });
+
+            projectGrid.addEventListener('scroll', updateArrowVisibility);
+            window.addEventListener('resize', updateArrowVisibility);
+
+            // Initial check
+            updateArrowVisibility();
+        });
+    </script>
+</body>
+</html>
