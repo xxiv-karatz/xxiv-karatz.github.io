@@ -3,139 +3,452 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khulekani | Software Engineer</title>
+    <title>Khulekani Mtshali | Software Engineer</title>
+    <meta name="description" content="Portfolio of Khulekani Mtshali — software engineer building AI products, web applications, and cybersecurity tools with real-world impact.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <nav>
-        <a href="#" class="brand">KHULEKANI</a>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
 
-    <header class="hero">
-        <section class="hero-copy">
-            <p class="eyebrow">Software Engineer & Cybersecurity Enthusiast</p>
-            <h1>Khulekani Mtshali</h1>
-            <p class="hero-text">I build modern digital products, intelligent systems, and scalable web experiences focused on real-world impact.</p>
-            <div class="hero-actions">
-                <a href="#work" class="button primary">View featured work</a>
-                <a href="#contact" class="button secondary">Get in touch</a>
-                <a href="files/Khulekani_Mtshali_Resume.pdf" download class="button secondary">Download Resume</a>
-            </div>
-        </section>
-        <figure class="hero-image">
-            <img src="images/profile.jpeg" alt="A picture of Khulekani Mtshali">
-        </figure>
+    <header class="site-header">
+        <nav class="site-nav" aria-label="Primary navigation">
+            <a href="#" class="brand" aria-label="Khulekani — home">KHULEKANI</a>
+            <ul role="list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section id="about" class="section about-section">
-            <header class="section-header">
-                <span>About</span>
-                <h2>Purpose-driven engineering with impact.</h2>
-            </header>
-            <p>I’m a software engineer passionate about building practical technology solutions across web development, AI, and cybersecurity. I enjoy creating systems that solve real problems, improve user experiences, and push innovative ideas forward</p>
+
+        <section id="hero" class="hero" aria-labelledby="hero-heading">
+            <div class="hero-copy">
+                <p class="eyebrow">Software Engineer &amp; Cybersecurity Enthusiast</p>
+                <h1 id="hero-heading">Khulekani Mtshali</h1>
+                <p class="hero-text">I build modern digital products, intelligent systems, and scalable web experiences focused on real-world impact.</p>
+                <nav class="hero-actions" aria-label="Quick links">
+                    <a href="#work" class="button primary">View featured work</a>
+                    <a href="#contact" class="button secondary">Get in touch</a>
+                    <a href="files/Khulekani_Mtshali_Resume.pdf" download class="button secondary">Download Resume</a>
+                </nav>
+            </div>
+            <figure class="hero-image">
+                <img src="images/profile.jpeg" alt="Portrait of Khulekani Mtshali">
+            </figure>
         </section>
 
-        <section id="work" class="section projects-section">
+        <section id="about" class="section about-section" aria-labelledby="about-heading">
             <header class="section-header">
-                <span>Featured Work</span>
-                <h2>Projects</h2>
+                <p class="section-eyebrow">About</p>
+                <h2 id="about-heading">Purpose-driven engineering with impact.</h2>
             </header>
-            <div class="project-container">
-                <button class="scroll-arrow left-arrow" aria-label="Scroll left">&larr;</button>
-                <section class="project-grid">
-                    <article class="project-card">
-                        <p class="project-label">Innerk Hub</p>
-                        <h3>Research collaboration platform</h3>
-                        <p>Full-stack web app connecting researchers, supervisors, and admins. Features project management, real-time communication, and progress tracking.</p>
-                        <p class="project-links"><a href="https://github.com/iamprist/University-Research-Collaboration-Platform" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-                    </article>
-                    <article class="project-card">
-                        <p class="project-label">Sentic</p>
-                        <h3>AI sentiment analysis dashboard</h3>
-                        <p>Full-stack web app that analyzes customer feedback, reviews, and social posts using the DeepSeek API. Features per-entry sentiment scoring, theme extraction, insights report, and six built-in sample datasets.</p>
-                        <p class="project-links"><a href="https://sentic.onrender.com/"  target="_blank" rel="noopener noreferrer">Live app</a> · <a href="https://github.com/xxiv-karatz/sentic" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-                    </article>
-                    <article class="project-card">
-                        <p class="project-label">JobGenie 🧞</p>
-                        <h3>AI-powered career assistant</h3>
-                        <p>Helps first-time job seekers write CVs, find learnerships, and prepare for interviews. Built with IBM prompt engineering principles.</p>
-                        <p class="project-links"><a href="https://jobgenieai.lovable.app" target="_blank" rel="noopener noreferrer">Live app</a> · <a href="https://github.com/5Bit-Technologies/JobGenieAI" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-                    </article>
-                    <article class="project-card">
-                        <p class="project-label">DocuCode AI 🤖</p>
-                        <h3>AI-powered code documentation & testing</h3>
-                        <p>Turn messy code into clean docstrings, inline comments, unit tests, and READMEs in seconds. Supports Python, JS, TS, SQL, Go, Rust, and Java.</p>
-                        <p class="project-links"><a href="https://docucodeai.lovable.app" target="_blank" rel="noopener noreferrer">Live app</a> · <a href="https://github.com/xxiv-karatz/docucodeai" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-                    </article>
-                    <article class="project-card">
-                        <p class="project-label">CareGuide 🩺</p>
-                        <h3>Healthcare chatbot</h3>
-                        <p>Conversational AI for symptom checking, mental health support, and finding nearby medical facilities. Supports all 11 South African languages.</p>
-                        <p class="project-links"><a href="https://creator.voiceflow.com/share/69eb12a06698cc0dab2d182e/development" target="_blank" rel="noopener noreferrer">Live chatbot</a> · <a href="https://github.com/5Bit-Technologies/CareGuide" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-                    </article>
-                </section>
-                <button class="scroll-arrow right-arrow" aria-label="Scroll right">&rarr;</button>
+            <p>I'm a software engineer passionate about building practical technology solutions across web development, AI, and cybersecurity. I enjoy creating systems that solve real problems, improve user experiences, and push innovative ideas forward.</p>
+        </section>
+
+        <section id="work" class="section projects-section" aria-labelledby="work-heading">
+            <header class="section-header">
+                <p class="section-eyebrow">Featured Work</p>
+                <h2 id="work-heading">Projects</h2>
+            </header>
+            <div class="project-container" role="region" aria-label="Project carousel">
+                <button class="scroll-arrow left-arrow" aria-label="Scroll left" type="button">&larr;</button>
+                <ul class="project-grid" role="list">
+
+                    <li class="project-card">
+                        <article aria-labelledby="card-innerk-title">
+                            <header class="card-header">
+                                <span class="project-label">Innerk Hub</span>
+                            </header>
+                            <h3 id="card-innerk-title">University research collaboration platform</h3>
+                            <p class="card-blurb">Full-stack platform connecting researchers, supervisors, and admins at Wits. Real-time comms, funding management, milestone tracking, and a full CI/CD pipeline.</p>
+                            <footer class="card-footer">
+                                <button class="btn-details" type="button" aria-haspopup="dialog" onclick="openModal('innerk')">View details</button>
+                                <a href="https://github.com/iamprist/University-Research-Collaboration-Platform" target="_blank" rel="noopener noreferrer" class="card-link">GitHub</a>
+                            </footer>
+                        </article>
+                    </li>
+
+                    <li class="project-card">
+                        <article aria-labelledby="card-jobgenie-title">
+                            <header class="card-header">
+                                <span class="project-label">JobGenie 🧞</span>
+                            </header>
+                            <h3 id="card-jobgenie-title">AI career assistant for South African youth</h3>
+                            <p class="card-blurb">Guides first-time job seekers through CV building, learnership discovery, mock interviews, and career quizzes — built to reach township and rural youth.</p>
+                            <footer class="card-footer">
+                                <button class="btn-details" type="button" aria-haspopup="dialog" onclick="openModal('jobgenie')">View details</button>
+                                <a href="https://jobgenieai.lovable.app" target="_blank" rel="noopener noreferrer" class="card-link">Live app</a>
+                                <a href="https://github.com/5Bit-Technologies/JobGenieAI" target="_blank" rel="noopener noreferrer" class="card-link">GitHub</a>
+                            </footer>
+                        </article>
+                    </li>
+
+                    <li class="project-card">
+                        <article aria-labelledby="card-sentic-title">
+                            <header class="card-header">
+                                <span class="project-label">Sentic 📊</span>
+                            </header>
+                            <h3 id="card-sentic-title">AI sentiment analysis dashboard</h3>
+                            <p class="card-blurb">Analyses customer feedback and reviews — returning sentiment scores, emotion tags, recurring themes, executive summaries, and actionable recommendations.</p>
+                            <footer class="card-footer">
+                                <button class="btn-details" type="button" aria-haspopup="dialog" onclick="openModal('sentic')">View details</button>
+                                <a href="https://sentic.onrender.com/" target="_blank" rel="noopener noreferrer" class="card-link">Live app</a>
+                                <a href="https://github.com/xxiv-karatz/sentic" target="_blank" rel="noopener noreferrer" class="card-link">GitHub</a>
+                            </footer>
+                        </article>
+                    </li>
+
+                    <li class="project-card">
+                        <article aria-labelledby="card-docucode-title">
+                            <header class="card-header">
+                                <span class="project-label">DocuCode AI 🤖</span>
+                            </header>
+                            <h3 id="card-docucode-title">AI code documentation &amp; testing</h3>
+                            <p class="card-blurb">Paste messy code, get back inline comments, docstrings, unit tests, and a README snippet instantly. Supports 7+ languages with auto-detection.</p>
+                            <footer class="card-footer">
+                                <button class="btn-details" type="button" aria-haspopup="dialog" onclick="openModal('docucode')">View details</button>
+                                <a href="https://docucodeai.lovable.app" target="_blank" rel="noopener noreferrer" class="card-link">Live app</a>
+                                <a href="https://github.com/xxiv-karatz/docucodeai" target="_blank" rel="noopener noreferrer" class="card-link">GitHub</a>
+                            </footer>
+                        </article>
+                    </li>
+
+                    <li class="project-card">
+                        <article aria-labelledby="card-careguide-title">
+                            <header class="card-header">
+                                <span class="project-label">CareGuide 🩺</span>
+                            </header>
+                            <h3 id="card-careguide-title">Multilingual healthcare chatbot</h3>
+                            <p class="card-blurb">Conversational AI for symptom checking, mental health support, and locating nearby medical facilities — supporting all 11 South African official languages.</p>
+                            <footer class="card-footer">
+                                <button class="btn-details" type="button" aria-haspopup="dialog" onclick="openModal('careguide')">View details</button>
+                                <a href="https://creator.voiceflow.com/share/69eb12a06698cc0dab2d182e/development" target="_blank" rel="noopener noreferrer" class="card-link">Live chatbot</a>
+                                <a href="https://github.com/5Bit-Technologies/CareGuide" target="_blank" rel="noopener noreferrer" class="card-link">GitHub</a>
+                            </footer>
+                        </article>
+                    </li>
+
+                    <li class="project-card project-card--coming-soon">
+                        <article aria-labelledby="card-coming-title">
+                            <header class="card-header">
+                                <span class="project-label">Coming Soon 🚀</span>
+                            </header>
+                            <h3 id="card-coming-title">AI solution — in development</h3>
+                            <p class="card-blurb">An end-to-end AI application targeting a real-world problem in healthcare, finance, or education. Full details and live demo dropping soon.</p>
+                            <footer class="card-footer">
+                                <p class="coming-soon-note">Check back soon</p>
+                            </footer>
+                        </article>
+                    </li>
+
+                </ul>
+                <button class="scroll-arrow right-arrow" aria-label="Scroll right" type="button">&rarr;</button>
             </div>
         </section>
 
-        <section id="contact" class="section contact-section">
+        <section id="contact" class="section contact-section" aria-labelledby="contact-heading">
             <header class="section-header">
-                <span>Contact</span>
-                <h2>Let's connect.</h2>
+                <p class="section-eyebrow">Contact</p>
+                <h2 id="contact-heading">Let's connect.</h2>
             </header>
             <p>If you want to collaborate, hire, or discuss how technology can support more young people, reach out.</p>
-            <p>Email: <a href="mailto:praymtshali@gmail.com">praymtshali@gmail.com</a></p>
-            <p>GitHub: <a href="https://github.com/xxiv-karatz" target="_blank" rel="noopener noreferrer">github.com/xxiv-karatz</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/khulekani-mtshali" target="_blank" rel="noopener noreferrer">linkedin.com/in/khulekani-mtshali</a></p>
+            <address>
+                <p>Email: <a href="mailto:praymtshali@gmail.com">praymtshali@gmail.com</a></p>
+                <p>GitHub: <a href="https://github.com/xxiv-karatz" target="_blank" rel="noopener noreferrer">github.com/xxiv-karatz</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/khulekani-mtshali" target="_blank" rel="noopener noreferrer">linkedin.com/in/khulekani-mtshali</a></p>
+            </address>
         </section>
+
     </main>
 
-    <footer>
-        <p>© 2026 Khulekani Mtshali</p>
+    <footer class="site-footer">
+        <small>&copy; 2026 Khulekani Mtshali</small>
     </footer>
 
+    <!-- ── MODALS ── -->
+
+    <dialog id="modal-innerk" aria-labelledby="modal-innerk-title">
+        <article class="modal-box">
+            <header class="modal-header">
+                <span class="project-label">Innerk Hub</span>
+                <button class="modal-close" type="button" onclick="closeModal('innerk')" aria-label="Close dialog">&times;</button>
+            </header>
+            <h2 id="modal-innerk-title">University Research Collaboration Platform</h2>
+            <p>A full-stack web application built to streamline research collaboration in academic environments. Innerk Hub connects researchers, facilitates project and funding management, and provides real-time communication, supervision, and progress tracking — all in one platform. Developed for COMS3003A Software Design at the University of the Witwatersrand, 2025.</p>
+
+            <section class="modal-section" aria-labelledby="innerk-objectives">
+                <h3 id="innerk-objectives">Objectives</h3>
+                <ul>
+                    <li>Centralise research collaboration in a single platform</li>
+                    <li>Enable transparent project and milestone management</li>
+                    <li>Facilitate supervision and reviewer feedback mechanisms</li>
+                    <li>Track and manage research funding and grant usage</li>
+                    <li>Empower admins with usage monitoring and role management</li>
+                </ul>
+            </section>
+
+            <section class="modal-section" aria-labelledby="innerk-features">
+                <h3 id="innerk-features">Key Features</h3>
+                <ul>
+                    <li><strong>User Verification:</strong> Firebase Google Sign-In with three roles — Researcher, Reviewer, and Admin</li>
+                    <li><strong>Project Management:</strong> Post projects, define team needs, and invite collaborators</li>
+                    <li><strong>Collaboration Tools:</strong> Real-time messaging, document sharing, and milestone tracking</li>
+                    <li><strong>Funding Tracker:</strong> Manage grants, spending logs, and funding forecast dashboards</li>
+                    <li><strong>Reports &amp; Dashboards:</strong> Export project data as CSV/PDF with custom analytics views</li>
+                    <li><strong>AI Recommendations (Planned):</strong> Match reviewers to projects based on expertise tags</li>
+                </ul>
+            </section>
+
+            <section class="modal-section" aria-labelledby="innerk-stack">
+                <h3 id="innerk-stack">Tech Stack</h3>
+                <ul>
+                    <li><strong>Frontend:</strong> React (Create React App)</li>
+                    <li><strong>Backend &amp; Services:</strong> Firebase Auth, Firestore, Firebase Storage</li>
+                    <li><strong>Styling:</strong> Bootstrap 5 + Custom CSS</li>
+                    <li><strong>Testing:</strong> Jest, Codecov</li>
+                    <li><strong>CI/CD:</strong> GitHub Actions</li>
+                    <li><strong>Hosting:</strong> Microsoft Azure</li>
+                    <li><strong>Agile Tooling:</strong> Trello for sprint and task tracking</li>
+                </ul>
+            </section>
+
+            <section class="modal-section" aria-labelledby="innerk-qa">
+                <h3 id="innerk-qa">Testing &amp; Quality</h3>
+                <ul>
+                    <li>Unit testing with Jest</li>
+                    <li>User Acceptance Testing (UAT) using Given-When-Then</li>
+                    <li>Code coverage tracked with Codecov</li>
+                    <li>Automated testing &amp; deployment via GitHub Actions CI/CD pipeline</li>
+                </ul>
+            </section>
+
+            <section class="modal-section" aria-labelledby="innerk-team">
+                <h3 id="innerk-team">Team</h3>
+                <ul>
+                    <li>Nonhlanhla Sindane — Product Owner</li>
+                    <li>Pretty Mangwadi — Scrum Master</li>
+                    <li>Smiso Ndlovu — Developer</li>
+                    <li>Nkosinathi Tshabalala — Developer</li>
+                    <li>Khulekani Mtshali — Developer</li>
+                    <li>Zainab Lorgat — Developer</li>
+                </ul>
+            </section>
+
+            <footer class="modal-links">
+                <a href="https://github.com/iamprist/University-Research-Collaboration-Platform" target="_blank" rel="noopener noreferrer" class="button primary">GitHub</a>
+            </footer>
+        </article>
+    </dialog>
+
+    <dialog id="modal-jobgenie" aria-labelledby="modal-jobgenie-title">
+        <article class="modal-box">
+            <header class="modal-header">
+                <span class="project-label">JobGenie 🧞</span>
+                <button class="modal-close" type="button" onclick="closeModal('jobgenie')" aria-label="Close dialog">&times;</button>
+            </header>
+            <h2 id="modal-jobgenie-title">AI Career Assistant for South African Youth</h2>
+            <p>JobGenie gives young South Africans (ages 18–30) immediate access to career guidance — closing the gap left by a shortage of career counsellors in townships and rural areas. It handles CV building, learnership discovery, interview prep, and career path recommendations through a conversational AI interface.</p>
+
+            <section class="modal-section" aria-labelledby="jobgenie-features">
+                <h3 id="jobgenie-features">Key Features</h3>
+                <ul>
+                    <li><strong>CV Builder:</strong> Step-by-step conversation that generates a professional CV with live preview and PDF download</li>
+                    <li><strong>CV Checker:</strong> Upload or paste a CV, get an AI score and concrete rewrite suggestions</li>
+                    <li><strong>Job &amp; Learnership Finder:</strong> SETA-aligned listings with stipend ranges and personalised apply tips by province</li>
+                    <li><strong>Interview Coach:</strong> Practice and mock interview modes with feedback on Confidence, Clarity, and Relevance</li>
+                    <li><strong>Career Quiz:</strong> 10-question quiz recommending three career paths with SA-specific next steps (SETAs, NSFAS, YES Programme)</li>
+                    <li><strong>Document Analysis:</strong> Upload job ads or contracts and ask JobGenie to analyse and respond</li>
+                </ul>
+            </section>
+
+            <section class="modal-section" aria-labelledby="jobgenie-stack">
+                <h3 id="jobgenie-stack">Tech Stack</h3>
+                <ul>
+                    <li><strong>Frontend:</strong> React 19, TanStack Start v1, Tailwind CSS v4, shadcn/ui</li>
+                    <li><strong>Backend:</strong> Cloudflare Workers (edge functions), Lovable Cloud</li>
+                    <li><strong>AI Model:</strong> Google Gemini 2.5 Flash via Lovable AI Gateway</li>
+                    <li><strong>Prompt approach:</strong> South-Africa-aware system prompt structured with role, context, constraints, and output format per IBM prompt engineering principles</li>
+                    <li><strong>PDF generation:</strong> html2pdf.js (client-side)</li>
+                </ul>
+            </section>
+
+            <footer class="modal-links">
+                <a href="https://jobgenieai.lovable.app" target="_blank" rel="noopener noreferrer" class="button primary">Live app</a>
+                <a href="https://github.com/5Bit-Technologies/JobGenieAI" target="_blank" rel="noopener noreferrer" class="button secondary">GitHub</a>
+            </footer>
+        </article>
+    </dialog>
+
+    <dialog id="modal-sentic" aria-labelledby="modal-sentic-title">
+        <article class="modal-box">
+            <header class="modal-header">
+                <span class="project-label">Sentic 📊</span>
+                <button class="modal-close" type="button" onclick="closeModal('sentic')" aria-label="Close dialog">&times;</button>
+            </header>
+            <h2 id="modal-sentic-title">AI Sentiment Analysis Dashboard</h2>
+            <p>Sentic analyses short text — customer reviews, support tickets, survey responses, social posts — and returns per-entry sentiment, recurring themes, executive insights, and concrete recommendations. Designed for analysts and product teams who need fast qualitative-to-quantitative conversion without a full ML pipeline.</p>
+
+            <section class="modal-section" aria-labelledby="sentic-outputs">
+                <h3 id="sentic-outputs">Key Outputs</h3>
+                <ul>
+                    <li>Per-entry sentiment label, score (–1 to 1), and confidence</li>
+                    <li>Emotion tagging and key-phrase extraction per entry</li>
+                    <li>Overall metrics: dominant sentiment, average score, executive summary</li>
+                    <li>Theme extraction with mention counts and theme-level sentiment</li>
+                    <li>6 actionable insights and 5 recommendations</li>
+                    <li>6 built-in sample datasets across common domains</li>
+                </ul>
+            </section>
+
+            <section class="modal-section" aria-labelledby="sentic-stack">
+                <h3 id="sentic-stack">Tech Stack &amp; Architecture</h3>
+                <ul>
+                    <li><strong>Frontend:</strong> Vanilla HTML, CSS, JavaScript — zero build step</li>
+                    <li><strong>Backend:</strong> Python Flask, hosted on Render</li>
+                    <li><strong>AI Model:</strong> DeepSeek deepseek-chat in JSON response mode (temperature 0.2)</li>
+                    <li><strong>Prompt approach:</strong> Strict JSON schema enforced in system prompt — per-entry sentiment, score, confidence, emotions, and key phrases; overall metrics in a single pass</li>
+                    <li><strong>Limits:</strong> 50 entries per request, 5,000 characters per entry</li>
+                </ul>
+            </section>
+
+            <footer class="modal-links">
+                <a href="https://sentic.onrender.com/" target="_blank" rel="noopener noreferrer" class="button primary">Live app</a>
+                <a href="https://github.com/xxiv-karatz/sentic" target="_blank" rel="noopener noreferrer" class="button secondary">GitHub</a>
+            </footer>
+        </article>
+    </dialog>
+
+    <dialog id="modal-docucode" aria-labelledby="modal-docucode-title">
+        <article class="modal-box">
+            <header class="modal-header">
+                <span class="project-label">DocuCode AI 🤖</span>
+                <button class="modal-close" type="button" onclick="closeModal('docucode')" aria-label="Close dialog">&times;</button>
+            </header>
+            <h2 id="modal-docucode-title">AI-Powered Code Documentation &amp; Testing</h2>
+            <p>DocuCode AI turns messy, undocumented source code into clean, structured documentation in seconds. Paste a function or query, pick a language (or let it auto-detect), and the AI returns inline comments, a docstring, a plain-English explanation, a unit test, and a README snippet — with syntax highlighting and one-click copy.</p>
+
+            <section class="modal-section" aria-labelledby="docucode-features">
+                <h3 id="docucode-features">Features</h3>
+                <ul>
+                    <li><strong>Inline Comments:</strong> Original code annotated line by line</li>
+                    <li><strong>Docstring:</strong> Google / JSDoc / Javadoc / SQL block style depending on language</li>
+                    <li><strong>Plain Explanation:</strong> 2–4 sentences in plain English</li>
+                    <li><strong>Unit Test:</strong> Runnable pytest, Jest, or JUnit snippet</li>
+                    <li><strong>README Snippet:</strong> Markdown section ready to paste into a repo</li>
+                    <li><strong>Complexity Score:</strong> simple / moderate / complex tag</li>
+                    <li><strong>Edge Cases:</strong> 3–6 failure modes identified by the model</li>
+                    <li><strong>Before vs After:</strong> Readability and maintainability scoring via /api/compare</li>
+                </ul>
+            </section>
+
+            <section class="modal-section" aria-labelledby="docucode-stack">
+                <h3 id="docucode-stack">Tech Stack</h3>
+                <ul>
+                    <li><strong>Frontend:</strong> React 19, TypeScript, TanStack Start v1, Vite 7</li>
+                    <li><strong>Styling:</strong> Tailwind CSS v4, shadcn/ui, Midnight Indigo theme</li>
+                    <li><strong>AI Model:</strong> Gemini 2.5 Flash via Lovable AI Gateway</li>
+                    <li><strong>Prompt approach:</strong> JSON-mode output with strict schema (commented_code, docstring, explanation, test_snippet, readme_snippet, complexity_score, edge_cases)</li>
+                    <li><strong>Runtime:</strong> Cloudflare Workers (edge)</li>
+                    <li><strong>Languages:</strong> Python, JavaScript, TypeScript, SQL, Go, Rust, Java — with auto-detection</li>
+                </ul>
+            </section>
+
+            <footer class="modal-links">
+                <a href="https://docucodeai.lovable.app" target="_blank" rel="noopener noreferrer" class="button primary">Live app</a>
+                <a href="https://github.com/xxiv-karatz/docucodeai" target="_blank" rel="noopener noreferrer" class="button secondary">GitHub</a>
+            </footer>
+        </article>
+    </dialog>
+
+    <dialog id="modal-careguide" aria-labelledby="modal-careguide-title">
+        <article class="modal-box">
+            <header class="modal-header">
+                <span class="project-label">CareGuide 🩺</span>
+                <button class="modal-close" type="button" onclick="closeModal('careguide')" aria-label="Close dialog">&times;</button>
+            </header>
+            <h2 id="modal-careguide-title">Multilingual Healthcare Chatbot</h2>
+            <p>CareGuide is a conversational AI built to improve access to healthcare information for South Africans — particularly in communities with limited access to clinics or healthcare professionals. It supports symptom checking, mental health guidance, and nearby facility discovery.</p>
+
+            <section class="modal-section" aria-labelledby="careguide-features">
+                <h3 id="careguide-features">Key Features</h3>
+                <ul>
+                    <li>Symptom checking and triage guidance</li>
+                    <li>Mental health support conversations</li>
+                    <li>Nearest medical facility search</li>
+                    <li>Supports all 11 South African official languages</li>
+                </ul>
+            </section>
+
+            <section class="modal-section" aria-labelledby="careguide-stack">
+                <h3 id="careguide-stack">Tech Stack</h3>
+                <ul>
+                    <li><strong>Platform:</strong> Voiceflow (no-code conversational AI builder)</li>
+                    <li><strong>Prompt approach:</strong> Intent-based dialogue flows with fallback handling and contextual escalation paths</li>
+                    <li><strong>Accessibility focus:</strong> Designed for mobile-first, low-bandwidth environments</li>
+                </ul>
+            </section>
+
+            <footer class="modal-links">
+                <a href="https://creator.voiceflow.com/share/69eb12a06698cc0dab2d182e/development" target="_blank" rel="noopener noreferrer" class="button primary">Live chatbot</a>
+                <a href="https://github.com/5Bit-Technologies/CareGuide" target="_blank" rel="noopener noreferrer" class="button secondary">GitHub</a>
+            </footer>
+        </article>
+    </dialog>
+
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        // Nav scroll behaviour
+        const siteHeader = document.querySelector('.site-header');
+        function updateNav() {
+            siteHeader.classList.toggle('scrolled', window.scrollY > 10);
+        }
+        window.addEventListener('scroll', updateNav, { passive: true });
+        updateNav();
+
+        // Carousel
+        document.addEventListener('DOMContentLoaded', function () {
             const projectGrid = document.querySelector('.project-grid');
             const leftArrow = document.querySelector('.left-arrow');
             const rightArrow = document.querySelector('.right-arrow');
 
-            function updateArrowVisibility() {
-                const scrollLeft = projectGrid.scrollLeft;
-                const scrollWidth = projectGrid.scrollWidth;
-                const clientWidth = projectGrid.clientWidth;
-
-                leftArrow.disabled = scrollLeft <= 0;
-                rightArrow.disabled = scrollLeft >= scrollWidth - clientWidth - 1;
+            function updateArrows() {
+                leftArrow.disabled = projectGrid.scrollLeft <= 0;
+                rightArrow.disabled = projectGrid.scrollLeft >= projectGrid.scrollWidth - projectGrid.clientWidth - 1;
             }
 
-            leftArrow.addEventListener('click', function() {
-                projectGrid.scrollBy({
-                    left: -400,
-                    behavior: 'smooth'
-                });
+            leftArrow.addEventListener('click', () => projectGrid.scrollBy({ left: -340, behavior: 'smooth' }));
+            rightArrow.addEventListener('click', () => projectGrid.scrollBy({ left: 340, behavior: 'smooth' }));
+            projectGrid.addEventListener('scroll', updateArrows);
+            window.addEventListener('resize', updateArrows);
+            updateArrows();
+        });
+
+        // Modals — using native <dialog> element
+        function openModal(id) {
+            const dialog = document.getElementById('modal-' + id);
+            dialog.showModal();
+        }
+
+        function closeModal(id) {
+            const dialog = document.getElementById('modal-' + id);
+            dialog.close();
+        }
+
+        // Close on backdrop click
+        document.querySelectorAll('dialog').forEach(function (dialog) {
+            dialog.addEventListener('click', function (e) {
+                const rect = dialog.getBoundingClientRect();
+                const clickedInside = (
+                    e.clientX >= rect.left && e.clientX <= rect.right &&
+                    e.clientY >= rect.top && e.clientY <= rect.bottom
+                );
+                if (!clickedInside) dialog.close();
             });
-
-            rightArrow.addEventListener('click', function() {
-                projectGrid.scrollBy({
-                    left: 400,
-                    behavior: 'smooth'
-                });
-            });
-
-            projectGrid.addEventListener('scroll', updateArrowVisibility);
-            window.addEventListener('resize', updateArrowVisibility);
-
-            // Initial check
-            updateArrowVisibility();
         });
     </script>
+
 </body>
 </html>
