@@ -36,6 +36,12 @@ xxiv-karatz.github.io/
 
 ## 📋 Featured Projects
 
+## Sentic
+Sentiment analyzer too. Analyzes customer feedback, reviews, and social posts using the DeepSeek API. Features per-entry sentiment scoring, theme extraction, insights report, and six built-in sample datasets.
+
+- **Live App**: [sentic.onrender.com](https://sentic.onrender.com)
+- **GitHub**: [xxiv-karatz/sentic] (https://github.com/xxiv-karatz/sentic)
+
 ### JobGenie 🧞
 AI-powered career assistant for young South African job seekers (ages 18–30). Built in alignment with IBM prompt engineering principles.
 
