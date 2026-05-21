@@ -440,12 +440,13 @@
         // Close on backdrop click
         document.querySelectorAll('dialog').forEach(function (dialog) {
             dialog.addEventListener('click', function (e) {
-                const rect = dialog.getBoundingClientRect();
-                const clickedInside = (
+                const box = dialog.querySelector('.modal-box');
+                const rect = box.getBoundingClientRect();
+                const clickedInsideBox = (
                     e.clientX >= rect.left && e.clientX <= rect.right &&
-                    e.clientY >= rect.top && e.clientY <= rect.bottom
+                    e.clientY >= rect.top  && e.clientY <= rect.bottom
                 );
-                if (!clickedInside) dialog.close();
+                if (!clickedInsideBox) dialog.close();
             });
         });
     </script>
