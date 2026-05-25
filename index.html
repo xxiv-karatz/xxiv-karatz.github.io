@@ -103,6 +103,21 @@
                     </li>
 
                     <li class="project-card">
+                        <article aria-labelledby="card-clickme-title">
+                            <header class="card-header">
+                                <span class="project-label">clickme.exe 🔬</span>
+                            </header>
+                            <h3 id="card-clickme-title">AI-powered social engineering forensics</h3>
+                            <p class="card-blurb">Deconstructs phishing messages to expose psychological manipulation — urgency, fear, authority, scarcity. Returns exploitability scores, MITRE ATT&CK mapping, and defense recommendations for users and IT teams.</p>
+                            <footer class="card-footer">
+                                <button class="btn-details" type="button" aria-haspopup="dialog" onclick="openModal('clickme')">View details</button>
+                                <a href="https://clickme-exe.onrender.com/" target="_blank" rel="noopener noreferrer" class="card-link">Live app</a>
+                                <a href="https://github.com/xxiv-karatz/clickme.exe" target="_blank" rel="noopener noreferrer" class="card-link">GitHub</a>
+                            </footer>
+                        </article>
+                    </li>
+
+                    <li class="project-card">
                         <article aria-labelledby="card-docucode-title">
                             <header class="card-header">
                                 <span class="project-label">DocuCode AI 🤖</span>
@@ -126,21 +141,8 @@
                             <p class="card-blurb">Conversational AI for symptom checking, mental health support, and locating nearby medical facilities — supporting all 11 South African official languages.</p>
                             <footer class="card-footer">
                                 <button class="btn-details" type="button" aria-haspopup="dialog" onclick="openModal('careguide')">View details</button>
-                                <a href="https://creator.voiceflow.com/share/69eb12a06698cc0dab2d182e/development" target="_blank" rel="noopener noreferrer" class="card-link">Live chatbot</a>
+                                <a href="https://creator.voiceflow.com/share/69eb12a06698cc0dab2d182e/development" target="_blank" rel="noopener noreferrer" class="card-link">Live bot</a>
                                 <a href="https://github.com/5Bit-Technologies/CareGuide" target="_blank" rel="noopener noreferrer" class="card-link">GitHub</a>
-                            </footer>
-                        </article>
-                    </li>
-
-                    <li class="project-card project-card--coming-soon">
-                        <article aria-labelledby="card-coming-title">
-                            <header class="card-header">
-                                <span class="project-label">Coming Soon 🚀</span>
-                            </header>
-                            <h3 id="card-coming-title">AI solution — in development</h3>
-                            <p class="card-blurb">An end-to-end AI application targeting a real-world problem in healthcare, finance, or education. Full details and live demo dropping soon.</p>
-                            <footer class="card-footer">
-                                <p class="coming-soon-note">Check back soon</p>
                             </footer>
                         </article>
                     </li>
@@ -318,6 +320,75 @@
             <footer class="modal-links">
                 <a href="https://sentic.onrender.com/" target="_blank" rel="noopener noreferrer" class="button primary">Live app</a>
                 <a href="https://github.com/xxiv-karatz/sentic" target="_blank" rel="noopener noreferrer" class="button secondary">GitHub</a>
+            </footer>
+        </article>
+    </dialog>
+
+    <dialog id="modal-clickme" aria-labelledby="modal-clickme-title">
+        <article class="modal-box">
+            <header class="modal-header">
+                <span class="project-label">clickme.exe 🔬</span>
+                <button class="modal-close" type="button" onclick="closeModal('clickme')" aria-label="Close dialog">&times;</button>
+            </header>
+            <h2 id="modal-clickme-title">AI-Powered Social Engineering Forensics</h2>
+            <p>clickme.exe is a defensive security tool that deconstructs phishing messages to expose the psychological mechanics behind social engineering attacks. Paste any suspicious email, SMS, or DM and receive a structured forensic report in seconds — built for security professionals, IT/SOC teams, and awareness educators, not for generating attacks.</p>
+
+            <section class="modal-section" aria-labelledby="clickme-features">
+                <h3 id="clickme-features">Key Features</h3>
+                <ul>
+                    <li><strong>Single Message Analysis:</strong> Paste any suspicious message for instant forensic breakdown</li>
+                    <li><strong>Psychological Trigger Map:</strong> Identifies urgency, fear, authority, scarcity, social proof, and 5 more manipulation tactics</li>
+                    <li><strong>Exploitability Score:</strong> 0–100 numeric severity rating based on likelihood of success</li>
+                    <li><strong>MITRE ATT&amp;CK Mapping:</strong> Relevant technique IDs (T1566, T1566.001, etc.)</li>
+                    <li><strong>Technical Indicators:</strong> URLs, domains, spoofed senders, attachment warnings</li>
+                    <li><strong>Batch CSV Upload:</strong> Analyze up to 20 messages at once (requires a <code>message</code> column, max 5 MB)</li>
+                    <li><strong>Session Dashboard:</strong> Real-time analytics with Chart.js visualizations</li>
+                    <li><strong>PDF Export:</strong> Generate professional forensic reports client-side via jsPDF</li>
+                    <li><strong>Example Library:</strong> 7 pre-loaded real-world phishing samples (CEO fraud, invoice scams, credential phishing, crypto scams)</li>
+                    <li><strong>Dark/Light Theme:</strong> Toggle between modes for comfortable viewing</li>
+                    <li><strong>Zero Data Persistence:</strong> All session data is ephemeral; nothing is written to disk or a database</li>
+                </ul>
+            </section>
+
+            <section class="modal-section" aria-labelledby="clickme-report">
+                <h3 id="clickme-report">What's in a Report?</h3>
+                <ul>
+                    <li>Psychological trigger map with detailed explanations</li>
+                    <li>Exploitability score (0–100)</li>
+                    <li>MITRE ATT&amp;CK technique IDs</li>
+                    <li>Technical indicators (URLs, domains, spoofed senders, attachments)</li>
+                    <li>Narrative summary explaining the attack psychology</li>
+                    <li>Defense recommendations for end-users and IT/SOC teams</li>
+                    <li>Confidence score and risk level (low/medium/high/critical)</li>
+                    <li>Attack category classification (CEO fraud, credential phishing, invoice scam, etc.)</li>
+                </ul>
+            </section>
+
+            <section class="modal-section" aria-labelledby="clickme-stack">
+                <h3 id="clickme-stack">Tech Stack</h3>
+                <ul>
+                    <li><strong>Backend:</strong> Flask (Python)</li>
+                    <li><strong>AI Engine:</strong> DeepSeek API (<code>deepseek-chat</code>)</li>
+                    <li><strong>Frontend:</strong> HTML5, CSS3, Vanilla JavaScript</li>
+                    <li><strong>Visualizations:</strong> Chart.js</li>
+                    <li><strong>PDF Generation:</strong> jsPDF</li>
+                    <li><strong>Deployment:</strong> Render (free tier)</li>
+                    <li><strong>Session Management:</strong> In-memory with 1-hour TTL, zero data persistence</li>
+                </ul>
+            </section>
+
+            <section class="modal-section" aria-labelledby="clickme-ethics">
+                <h3 id="clickme-ethics">Ethical Use</h3>
+                <ul>
+                    <li><strong>Defensive tool only</strong> — analyzes messages you have received, does not generate phishing content</li>
+                    <li><strong>Zero data persistence</strong> — all session data is ephemeral; nothing is written to disk or a database</li>
+                    <li><strong>Intended users:</strong> security professionals, IT/SOC teams, security awareness educators, individuals investigating messages they've received</li>
+                </ul>
+            </section>
+
+            <footer class="modal-links">
+                <a href="https://clickme-exe.onrender.com/" target="_blank" rel="noopener noreferrer" class="button primary">Live app</a>
+                <a href="https://github.com/xxiv-karatz/clickme-exe" target="_blank" rel="noopener noreferrer" class="button secondary">GitHub</a>
             </footer>
         </article>
     </dialog>
