@@ -11,10 +11,14 @@
 </head>
 
 <body>
-    <audio controls autoplay loop>
-    <source src="music.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-    </audio>
+    <audio id="bgMusic" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    document.addEventListener("click", () => {
+    document.getElementById("bgMusic").play(); }, { once: true });
+</script>
     <header class="site-header">
         <nav class="site-nav" aria-label="Primary navigation">
             <a href="#" class="brand" aria-label="Khulekani — home">KHULEKANI</a>
